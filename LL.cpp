@@ -2,7 +2,6 @@
 #include <stdlib.h>
 using namespace std;
 
-
 struct node{
 	int data;
 	struct node *next;
@@ -14,7 +13,6 @@ void traversal(struct node *ptr)
 	cout<<ptr->data<<endl;
 	ptr = ptr ->next;
 	}
-
 }
 
 int main()
