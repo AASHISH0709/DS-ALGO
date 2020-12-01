@@ -36,7 +36,8 @@ int main(){
 			temp->next=newnode;
 			temp=newnode;
 		}
-		cout<<"Do you want do again"<<endl;
+		cout<<"Do you want TO ENTER ELEMENT again"<<endl;
+		cout<<"Press 0 for exit"<<endl;
 		int choice;
 		cin>>choice;
 		if(choice==0){
