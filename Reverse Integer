@@ -1,0 +1,14 @@
+Q. https://leetcode.com/problems/reverse-integer/
+
+-------------------------------------------
+import sys
+class Solution(object):
+    def reverse(self, x):
+        ans = 0;
+        while(x!=0):
+            digit = x%10;
+            if( ans>sys.maxint/10 and ans<(sys.maxint-1)/10) :
+                return 0
+            ans = (ans*10)+digit;
+            x=x/10;
+        return ans 
