@@ -3,14 +3,11 @@ Q.https://leetcode.com/problems/power-of-two/
 code ->
 
 class Solution(object):
-    def bitwiseComplement(self, n):
-        if (n==0) :
-            return 1
-        m =n
-        mask=0
-        while (m!=0):
-            mask = (mask<<1) |1
-            m=m>>1
-        
-        ans =(~n) & mask
-        return ans
+    def isPowerOfTwo(self, n):
+        for i in range (31):
+            ans = pow(2,i)
+            if (n==ans):
+                return True
+        return False
+         
+         
