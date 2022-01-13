@@ -1,0 +1,22 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[]={17,18,19,20,24,25,26,29};
+    int diff=arr[0];
+    for(int i=0;i<=7;i++){
+        if(arr[i]-i!=diff){
+            std::cout << "Missing Element is"<< i+diff << std::endl;
+            diff++;
+            if((arr[i]-i!=diff)){
+                for(int j =0;j<=((arr[i]-i)-diff);j++){
+                   std::cout << "Missing Element is"<< i+diff << std::endl;
+                    diff++; 
+                }
+            }
+        }
+    }
+}
